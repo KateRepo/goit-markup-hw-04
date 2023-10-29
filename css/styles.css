@@ -203,6 +203,14 @@ ol {
 .header-wrapper .auth-item:not(:last-child) {
   margin-right: 40px;
 }
+.auth-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-item:hover,
+.auth-item:focus {
+  color: var(--hover-color);
+}
 
 .auth-contact {
   display: flex;
@@ -212,12 +220,6 @@ ol {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.auth-contact:hover,
-.auth-contact:focus {
-  color: var(--hover-color);
 }
 
 /* Hero Section*/
